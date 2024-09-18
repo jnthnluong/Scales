@@ -23,21 +23,21 @@ void scaly(int x, int y) {
  
 
   //weird triangles
-  //triangle(x,y,x+((int)(Math.random()*5)),y,x+((int)(Math.random()*5)),y+((int)(Math.random()*5))); 
-  
-  fill(255,255,255);
+
   strokeWeight(2);
+  noFill();
   if((int)(Math.random()*10) < 7){
     stroke(98,75,10);
   }else{
    stroke(131,103,23); 
   }
-  
-  noFill();
+
   //fill(40, 40, 40);
   //ellipse(x,y,(int)(Math.random()*20)+4,(int)(Math.random()*20)+4);
   // hair?
   bezier(x, y, x+(int)(Math.random()*20), y+(int)(Math.random()*20), x-(int)(Math.random()*20), y-(int)(Math.random()*20), x+50, y+50);
+  stroke(103,77,27);
+  triangle(x,y,x+((int)(Math.random()*5)),y,x+((int)(Math.random()*5)),y+((int)(Math.random()*5))); 
 }
 
 void slices(int x,int y){
